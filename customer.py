@@ -7,9 +7,9 @@ class Customer:
         self.name = name
         self.shopping_cart = ShoppingCart()
 
-    def customer_add_product(self):
-        self.shopping_cart.add_product
+    def customer_add_product(self, new_product):
+        self.shopping_cart.add_product(new_product)
 
     def customer_products(self):
         for product in self.shopping_cart.products:
-            print(product)
+            print(product.name)

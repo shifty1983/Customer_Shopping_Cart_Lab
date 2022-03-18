@@ -14,3 +14,4 @@ class ShoppingCart:
     
     def clear_shopping_cart(self):
         del self.products[:]
+        print("Cart has been emptied")
